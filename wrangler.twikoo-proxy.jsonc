@@ -1,0 +1,11 @@
+{
+	"name": "fishtalk-twikoo-proxy",
+	"main": "cloudflare/twikoo-proxy.js",
+	"compatibility_date": "2025-01-01",
+	"routes": [
+		{
+			"pattern": "fishction.xyz/api/twikoo*",
+			"zone_name": "fishction.xyz"
+		}
+	]
+}
