@@ -48,8 +48,8 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 移动背景图片（支持单张或多张随机）
 		// mobile: "assets/images/MobileWallpaper/m1.avif",
 		mobile: [
-			"assets/images/DesktopWallpaper/ti81ai4bbtmd1 (1).jpg",
-			"assets/images/DesktopWallpaper/realesrgan-output.png",
+			"assets/images/MobileWallpaper/微信图片_20260605171030_139_18.jpg",
+			"assets/images/MobileWallpaper/微信图片_20260605171039_141_18.jpg",
 			
 		],
 	},
