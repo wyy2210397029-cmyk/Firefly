@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Twikoo Test</title></head>
+<body>
+<h1>Twikoo Test</h1>
+<div id="tcomment"></div>
+<script src="/assets/js/twikoo.min.js"></script>
+<script>
+console.log('twikoo loaded:', typeof twikoo);
+twikoo.init({
+  envId: '/api/twikoo',
+  el: '#tcomment',
+  path: '/test-page'
+}).then(function() {
+  console.log('Twikoo init success');
+}).catch(function(err) {
+  console.error('Twikoo init failed:', err);
+  document.getElementById('tcomment').innerHTML = 'Error: ' + err.message;
+});
+</script>
+</body>
+</html>

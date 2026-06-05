@@ -34,8 +34,10 @@ const config = {
 
   function createTwikooConfig() {
     return {
-      ...config,
+      envId: config.envId,
       el: "#tcomment",
+      path: config.path,
+      lang: config.lang,
     };
   }
 
