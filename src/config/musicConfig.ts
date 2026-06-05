@@ -50,10 +50,10 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	local: {
 		playlist: [
 			{
-				name: "使一颗心免于哀伤",
-				artist: "知更鸟 / HOYO-MiX / Chevy",
-				url: "/assets/music/使一颗心免于哀伤-哼唱.mp3",
-				cover: "/assets/music/cover/109951169585655912.webp",
+				name: "Crossing The Ocean",
+				artist: "何大河",
+				url: "何大河 - Crossing The Ocean.mp3",
+				cover: "/assets/music/cover/folder.jpg",
 				lrc: "",
 			},
 		],
