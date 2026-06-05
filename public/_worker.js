@@ -1,8 +1,18 @@
 const TWIKOO_ENDPOINT = "https://twikoo-vercel-omega-two.vercel.app/api";
 
-export async function onRequest(context) {
-	const { request } = context;
+export default {
+	async fetch(request, env) {
+		const url = new URL(request.url);
 
+		if (url.pathname === "/api/twikoo" || url.pathname === "/api/twikoo/") {
+			return proxyTwikoo(request);
+		}
+
+		return env.ASSETS.fetch(request);
+	},
+};
+
+async function proxyTwikoo(request) {
 	if (request.method === "OPTIONS") {
 		return new Response(null, {
 			status: 204,
