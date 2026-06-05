@@ -2,7 +2,7 @@ backend:
   name: github
   repo: wyy2210397029-cmyk/Firefly
   branch: master
-  base_url: https://fishction.xyz
+  base_url: https://fishtalk-oauth.vercel.app
   auth_endpoint: /api/auth
 
 local_backend: false
