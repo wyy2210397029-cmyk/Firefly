@@ -156,26 +156,6 @@
   fill: currentColor;
 }
 
-/* 加载遮罩居中：刷新评论时的 loading 指示器居中显示 */
-.twikoo .tk-comments-container {
-  position: relative;
-}
-
-.twikoo .el-loading-mask {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.twikoo .el-loading-spinner {
-  position: static;
-  top: auto;
-  margin-top: 0;
-  width: auto;
-}
-
 /* 输入框禁用态：降低对比度并保持边框统一 */
 .twikoo .el-input.is-disabled .el-input__inner,
 .twikoo .el-textarea.is-disabled .el-textarea__inner {

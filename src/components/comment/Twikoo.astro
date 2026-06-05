@@ -11,10 +11,14 @@ const jsUrl =
 	twikooConfig.jsUrl ||
 	"https://registry.npmmirror.com/twikoo/1.7.9/files/dist/twikoo.min.js";
 const cssUrl = twikooConfig.cssUrl;
+const normalizedPath =
+	Astro.props.path.length > 1
+		? Astro.props.path.replace(/\/+$/g, "")
+		: Astro.props.path;
 const config = {
 	...twikooConfig,
 	el: "#tcomment",
-	path: Astro.props.path,
+	path: normalizedPath,
 };
 ---
 
