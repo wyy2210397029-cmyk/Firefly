@@ -24,6 +24,9 @@ const config = {
 <script is:inline define:vars={{ config }}>
   let twikooRetryCount = 0;
   const maxTwikooRetries = 20;
+  let twikooInitPromise = null;
+  let initializedCommentEl = null;
+  let initializedPath = "";
 
   function createTwikooConfig() {
     return {
@@ -32,27 +35,38 @@ const config = {
     };
   }
 
-  function initTwikoo() {
+  function initTwikoo(force = false) {
     if (window.__twikooLoadError) {
       showTwikooError("Twikoo failed to load. Please refresh the page.");
       return;
     }
 
+    const commentEl = document.getElementById("tcomment");
+    if (!commentEl) return;
+
+    const dynamicConfig = createTwikooConfig();
+    const currentPath = dynamicConfig.path || window.location.pathname;
+
+    if (!force && twikooInitPromise) return;
+    if (!force && initializedCommentEl === commentEl && initializedPath === currentPath) return;
+
     if (typeof twikoo !== "undefined") {
-      const commentEl = document.getElementById("tcomment");
-      if (commentEl) {
-        twikooRetryCount = 0;
-        commentEl.innerHTML = "";
+      twikooRetryCount = 0;
+      commentEl.innerHTML = "";
 
-        const dynamicConfig = createTwikooConfig();
-
-        twikoo
-          .init(dynamicConfig)
-          .catch((error) => {
-            console.error("[Twikoo] Failed to initialize:", error);
-            showTwikooError("Twikoo failed to initialize. Please refresh the page.");
-          });
-      }
+      twikooInitPromise = twikoo
+        .init(dynamicConfig)
+        .then(() => {
+          initializedCommentEl = commentEl;
+          initializedPath = currentPath;
+        })
+        .catch((error) => {
+          console.error("[Twikoo] Failed to initialize:", error);
+          showTwikooError("Twikoo failed to initialize. Please refresh the page.");
+        })
+        .finally(() => {
+          twikooInitPromise = null;
+        });
     } else {
       twikooRetryCount += 1;
       if (twikooRetryCount > maxTwikooRetries) {
@@ -73,13 +87,13 @@ const config = {
 
   if (window.swup && window.swup.hooks) {
     window.swup.hooks.on("content:replace", function () {
-      setTimeout(initTwikoo, 200);
+      setTimeout(() => initTwikoo(true), 200);
     });
   } else {
     document.addEventListener("swup:enable", function () {
       if (window.swup && window.swup.hooks) {
         window.swup.hooks.on("content:replace", function () {
-          setTimeout(initTwikoo, 200);
+          setTimeout(() => initTwikoo(true), 200);
         });
       }
     });
