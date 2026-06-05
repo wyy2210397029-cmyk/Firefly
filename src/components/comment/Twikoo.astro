@@ -19,9 +19,12 @@ const config = {
 ---
 
 <div id="tcomment"></div>
-<script is:inline src={jsUrl}></script>
+<script is:inline src={jsUrl} onerror="window.__twikooLoadError = true"></script>
 {cssUrl && <link rel="stylesheet" href={cssUrl.startsWith("http") ? cssUrl : url(cssUrl)} />}
 <script is:inline define:vars={{ config }}>
+  let twikooRetryCount = 0;
+  const maxTwikooRetries = 20;
+
   function createTwikooConfig() {
     return {
       ...config,
@@ -30,9 +33,15 @@ const config = {
   }
 
   function initTwikoo() {
+    if (window.__twikooLoadError) {
+      showTwikooError("Twikoo failed to load. Please refresh the page.");
+      return;
+    }
+
     if (typeof twikoo !== "undefined") {
       const commentEl = document.getElementById("tcomment");
       if (commentEl) {
+        twikooRetryCount = 0;
         commentEl.innerHTML = "";
 
         const dynamicConfig = createTwikooConfig();
@@ -41,11 +50,23 @@ const config = {
           .init(dynamicConfig)
           .catch((error) => {
             console.error("[Twikoo] Failed to initialize:", error);
+            showTwikooError("Twikoo failed to initialize. Please refresh the page.");
           });
       }
     } else {
+      twikooRetryCount += 1;
+      if (twikooRetryCount > maxTwikooRetries) {
+        showTwikooError("Twikoo is still loading. Please refresh the page.");
+        return;
+      }
       setTimeout(initTwikoo, 500);
     }
+  }
+
+  function showTwikooError(message) {
+    const commentEl = document.getElementById("tcomment");
+    if (!commentEl) return;
+    commentEl.innerHTML = '<div class="text-sm text-(--content-meta) py-4">' + message + "</div>";
   }
 
   document.addEventListener("DOMContentLoaded", initTwikoo);
