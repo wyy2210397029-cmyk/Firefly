@@ -46,6 +46,7 @@ author: "fishtalk"
 假设我们找来了几个爵士乐手，这几个人出于某种原因，从来没有听过这首经典的爵士标准曲：The Nearness of You，我们给他们每人发上一本 Real Book，让他们照本宣科地演奏，出来的声音会是这样的：
 
 > 音频示例：the nearness of you
+<audio controls src="/assets/music/the nearness of you.mp3"></audio>
 
 它里面到底缺少了什么让我们感觉到干瘪和空洞呢？
 
@@ -58,6 +59,7 @@ Cmaj9、Cmaj9#11、Cmaj13#11 等等，它在谱例中都被记作 Cmaj7。感兴
 下面我们听到一首示例，Someday My Prince Will Come，在前面四个小节里，有三个和弦都是类似上面那样紧紧簇拥在一起的五个音。
 
 > 音频示例：someday my prince will come
+<audio controls src="/assets/music/somedaymeprincewillcome.mp3"></audio>
 
 总之，就是如此的多的可能性，但在 Real Book 中一概就是一个 Cmaj7。这相当于在食谱里面，厨师说在这个环节你调一个料汁，什么汁？糖醋汁吗？用番茄酱还是柠檬？酸口还是甜口？你自己去选，有无数种方法。
 
@@ -66,10 +68,12 @@ Cmaj9、Cmaj9#11、Cmaj13#11 等等，它在谱例中都被记作 Cmaj7。感兴
 我们来听一个反例，Miles Davis 最伟大的作品：So What，在前面的 vamp 你可以听到五个音向同一个方向移动了同样的音程。
 
 > 音频示例：so what
+<audio controls src="/assets/music/so what.mp3"></audio>
 
 所以在爵士乐的世界里，voice leading 是一个更模糊的原则。比如说，它需要更像唱歌，言下之意就是不要有太大的跳跃。下面是一个示例，一开始是没有 voice leading 的一个 C 大调 2-5-1，而后面是我一遍遍改变了它们的位置，你会马上感觉到不一样。
 
 > 音频示例：251
+<audio controls src="/assets/music/251.mp3"></audio>
 
 我们希望它的色彩是暗流涌动，而不是画风突变的。你可以反复听几遍，感受其中微妙的差别。
 
@@ -78,10 +82,12 @@ Cmaj9、Cmaj9#11、Cmaj13#11 等等，它在谱例中都被记作 Cmaj7。感兴
 我们再来举个例子，如果几个从来没有听过这首传世名曲 Watermelon Man 的爵士乐手来演奏它，它会是这样的：
 
 > 音频示例：watermelon man
+<audio controls src="/assets/music/watermelon man.mp3"></audio>
 
 听起来是一个像 12 小节布鲁斯一样的寡淡无味的东西。实际上它的原版是这样的：
 
 > 音频示例：watermelon man1
+<audio controls src="/assets/music/watermelon man1.mp3"></audio>
 
 你应该也听到那个 vamp 了：E G D F#。
 
@@ -90,6 +96,7 @@ Cmaj9、Cmaj9#11、Cmaj13#11 等等，它在谱例中都被记作 Cmaj7。感兴
 下面我们还要听到这首 The Nearness of You，你可以听到他弹着弹着歌的旋律就丢了，取而代之的是他右手凌厉的音符和左手的节奏，过了一会儿又回来，这些东西加在一起，就是属于他的，当时那一瞬间的 phrasing。
 
 > 音频示例：nearness of you
+<audio controls src="/assets/music/nearness of you.mp3"></audio>
 
 看到这里，你可能会问，既然这样，那为什么不能把最好的 voicing、最好的 leading、最好的句子都给它决定了，把它按最好的来演不就行了吗？
 
