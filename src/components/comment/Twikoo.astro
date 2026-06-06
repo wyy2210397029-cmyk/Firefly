@@ -33,8 +33,13 @@ const config = {
   let initializedPath = "";
 
   function createTwikooConfig() {
+    const envId =
+      typeof config.envId === "string" && config.envId.startsWith("/")
+        ? window.location.origin + config.envId
+        : config.envId;
+
     return {
-      envId: config.envId,
+      envId,
       el: "#tcomment",
       path: config.path,
       lang: config.lang,
