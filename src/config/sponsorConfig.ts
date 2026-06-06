@@ -9,7 +9,7 @@ export const sponsorConfig: SponsorConfig = {
 
 	// 赞助用途说明
 	usage:
-		"您的赞助将用于服务器维护、内容创作和功能开发，帮助我持续提供优质内容。",
+		"蒙诸君不弃，若愿惠施薄礼，赐金为助，实乃文旌之胜。",
 
 	// 是否显示赞助者列表
 	showSponsorsList: true,
