@@ -39,12 +39,11 @@ import { url } from "@/utils/url-utils";
     // 首先尝试加载 CDN CSS
     const cdnLink = document.createElement("link");
     cdnLink.rel = "stylesheet";
-    cdnLink.href =
-      "https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/spine-player.min.css";
+    cdnLink.href = cssPath;
 
     // 监听加载失败事件，自动回退到本地文件
     cdnLink.onerror = function () {
-      console.warn("⚠️ Spine CSS CDN failed, trying local fallback...");
+      console.warn("⚠️ Local Spine CSS failed, trying fallback...");
 
       // 移除失败的 CDN link
       if (cdnLink.parentNode) {
@@ -170,12 +169,11 @@ import { url } from "@/utils/url-utils";
           return;
         }
 
-        console.log("📦 Loading Spine runtime...");
+        console.log("📦 Loading local Spine runtime...");
         const script = document.createElement("script");
-        script.src =
-          "https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/iife/spine-player.min.js";
+        script.src = jsPath;
         script.onload = () => {
-          console.log("✅ Spine runtime loaded from CDN");
+          console.log("✅ Spine runtime loaded from local file");
           resolve();
         };
         script.onerror = (_error) => {

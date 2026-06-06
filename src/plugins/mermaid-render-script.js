@@ -290,7 +290,7 @@
 		return new Promise((resolve, reject) => {
 			const script = document.createElement("script");
 			script.src =
-				"https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.12.0/mermaid.min.js";
+				"https://registry.npmmirror.com/mermaid/11.12.0/files/dist/mermaid.min.js";
 
 			script.onload = () => {
 				console.log("Mermaid library loaded successfully");
@@ -302,7 +302,7 @@
 				// 尝试备用 CDN
 				const fallbackScript = document.createElement("script");
 				fallbackScript.src =
-					"https://unpkg.com/mermaid@11.12.0/dist/mermaid.min.js";
+					"https://s4.zstatic.net/ajax/libs/mermaid/11.12.0/mermaid.min.js";
 
 				fallbackScript.onload = () => {
 					console.log("Mermaid library loaded from fallback CDN");
@@ -333,7 +333,7 @@
 		return new Promise((resolve, _reject) => {
 			const script = document.createElement("script");
 			script.src =
-				"https://unpkg.com/svg-pan-zoom@3.6.2/dist/svg-pan-zoom.min.js";
+				"https://registry.npmmirror.com/svg-pan-zoom/3.6.2/files/dist/svg-pan-zoom.min.js";
 			script.onload = () => {
 				resolve();
 			};
@@ -342,7 +342,7 @@
 				// 尝试备用 CDN
 				const fallbackScript = document.createElement("script");
 				fallbackScript.src =
-					"https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.2/dist/svg-pan-zoom.min.js";
+					"https://s4.zstatic.net/npm/svg-pan-zoom@3.6.2/dist/svg-pan-zoom.min.js";
 
 				fallbackScript.onload = () => {
 					resolve();
