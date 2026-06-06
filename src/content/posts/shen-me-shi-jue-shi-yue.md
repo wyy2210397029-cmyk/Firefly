@@ -1,7 +1,8 @@
 ---
 title: "什么是爵士乐？"
 published: 2026-04-13
-description: "作为一个小小的脉络，摸见 Jazz 这座庞然大物的轮廓"
+description: "假书传世本无凭，躯壳空留待点睛。
+              即兴从来不由谱，琴心自在不随名。"
 image: "../../assets/images/jazz-article-cover.jpg"
 tags: ["音乐", "爵士"]
 category: "音乐"
