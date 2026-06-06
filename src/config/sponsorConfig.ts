@@ -8,7 +8,7 @@ export const sponsorConfig: SponsorConfig = {
 	description: "蒙诸君不弃，若愿惠施薄礼，赐金为助，实乃文旌之胜。",
 
 	// 赞助用途说明
-	usage: 
+	usage: "",
 
 	// 是否显示赞助者列表
 	showSponsorsList: true,
