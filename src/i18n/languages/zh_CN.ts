@@ -6,12 +6,12 @@ export const zh_CN: Translation = {
 	[Key.about]: "关于我",
 	[Key.archive]: "归档",
 	[Key.search]: "搜索",
-	[Key.searchNoResults]: "找不到相关结果。",
-	[Key.searchTypeSomething]: "请输入搜索关键词。",
-	[Key.searchLoading]: "正在搜索...",
+	[Key.searchNoResults]: "未寻得相关篇章。",
+	[Key.searchTypeSomething]: "请输入关键词以搜寻。",
+	[Key.searchLoading]: "搜索中...",
 	[Key.searchSummary]: "摘要",
 	[Key.searchContent]: "内容",
-	[Key.searchViewMore]: "查看更多结果 ({count} 个更多)",
+	[Key.searchViewMore]: "尚有 {count} 篇可览",
 	[Key.other]: "其他",
 	[Key.all]: "全部",
 
@@ -22,7 +22,7 @@ export const zh_CN: Translation = {
 	[Key.recentPosts]: "最新文章",
 	[Key.postList]: "文章列表",
 	[Key.tableOfContents]: "文章目录",
-	[Key.tocEmpty]: "当前页面没有目录",
+	[Key.tocEmpty]: "暂无目录。",
 	[Key.music]: "音乐",
 	[Key.musicNoPlaying]: "暂未播放",
 	[Key.musicLyrics]: "歌词",
@@ -49,16 +49,16 @@ export const zh_CN: Translation = {
 
 	[Key.comments]: "评论",
 	[Key.commentSection]: "评论区",
-	[Key.commentSubtitle]: "分享你的想法，与大家交流讨论",
-	[Key.commentNotConfigured]: "评论系统暂未配置",
+	[Key.commentSubtitle]: "畅所欲言，与诸君共话。",
+	[Key.commentNotConfigured]: "评论区尚未开启。",
 	[Key.guestbookCommentHint]:
-		"您还未在配置文件中启用评论系统，启用后访客才可在此留言",
+		"留言板尚未启用，请于配置中开启。",
 	[Key.friends]: "友链",
-	[Key.friendsDescription]: "这里是我的朋友们，欢迎互相访问交流",
+	[Key.friendsDescription]: "海内存知己，天涯若比邻。",
 	[Key.searchFriends]: "搜索友链...",
-	[Key.friendsEmpty]: "暂无友情链接",
+	[Key.friendsEmpty]: "静待佳友。",
 	[Key.guestbook]: "留言",
-	[Key.guestbookDescription]: "欢迎在这里留下你的足迹，分享你的想法和建议",
+	[Key.guestbookDescription]: "留步于此，不妨说点什么。",
 	[Key.untitled]: "无标题",
 	[Key.uncategorized]: "未分类",
 	[Key.noTags]: "无标签",
@@ -87,8 +87,8 @@ export const zh_CN: Translation = {
 	[Key.bangumi]: "番组计划",
 
 	// 番组计划筛选和状态文本
-	[Key.bangumiTitle]: "我的番组计划",
-	[Key.bangumiSubtitle]: "记录我的二次元之旅",
+	[Key.bangumiTitle]: "番组计划",
+	[Key.bangumiSubtitle]: "二次元之旅，记于此。",
 	[Key.bangumiFilterAll]: "全部",
 	[Key.bangumiFilterWatched]: "看过",
 	[Key.bangumiFilterWatching]: "在看",
@@ -160,13 +160,13 @@ export const zh_CN: Translation = {
 	// 404页面
 	[Key.notFound]: "404",
 	[Key.notFoundTitle]: "页面未找到",
-	[Key.notFoundDescription]: "抱歉，您访问的页面不存在或已被移动。",
+	[Key.notFoundDescription]: "此处空空如也，页面或已迁徙。",
 	[Key.backToHome]: "返回首页",
 
 	// RSS页面
 	[Key.rss]: "RSS 订阅",
-	[Key.rssDescription]: "订阅获取最新更新",
-	[Key.rssSubtitle]: "通过 RSS 订阅，第一时间获取最新文章和动态",
+	[Key.rssDescription]: "订阅以得新章。",
+	[Key.rssSubtitle]: "订阅 RSS，新章不落。",
 	[Key.rssLink]: "RSS 链接",
 	[Key.rssCopyToReader]: "复制链接到你的 RSS 阅读器",
 	[Key.rssCopyLink]: "复制链接",
@@ -174,17 +174,17 @@ export const zh_CN: Translation = {
 	[Key.rssWhatIsRSS]: "什么是 RSS？",
 	[Key.rssWhatIsRSSDescription]:
 		"RSS（Really Simple Syndication）是一种用于发布经常更新内容的标准格式。通过 RSS，你可以：",
-	[Key.rssBenefit1]: "及时获取网站最新内容，无需手动访问",
-	[Key.rssBenefit2]: "在一个地方管理多个网站的订阅",
-	[Key.rssBenefit3]: "避免错过重要更新和文章",
-	[Key.rssBenefit4]: "享受无广告的纯净阅读体验",
-	[Key.rssHowToUse]: "推荐使用 Feedly、Inoreader 或其他 RSS 阅读器来订阅本站。",
-	[Key.rssCopied]: "RSS 链接已复制到剪贴板！",
-	[Key.rssCopyFailed]: "复制失败，请手动复制链接",
+	[Key.rssBenefit1]: "新章即出，无需亲访。",
+	[Key.rssBenefit2]: "一处管理，诸站尽览。",
+	[Key.rssBenefit3]: "不再错过，点滴更新。",
+	[Key.rssBenefit4]: "纯净阅读，了无广告之扰。",
+	[Key.rssHowToUse]: "推荐以 Feedly、Inoreader 等工具订阅本站。",
+	[Key.rssCopied]: "链接已复制。",
+	[Key.rssCopyFailed]: "复制未成，请手动取之。",
 
 	//最后编辑时间卡片
 	[Key.lastModifiedPrefix]: "最后更新于 ",
-	[Key.lastModifiedOutdated]: "部分内容可能已过时",
+	[Key.lastModifiedOutdated]: "时移世易，部分内容或已过时。",
 	[Key.lastModifiedDaysAgo]: "距今已过 {days} 天",
 	[Key.year]: "年",
 	[Key.month]: "月",
@@ -206,7 +206,7 @@ export const zh_CN: Translation = {
 	[Key.randomPosts]: "随机文章",
 	[Key.smartRecommend]: "智能推荐",
 	[Key.randomRecommend]: "随机推荐",
-	[Key.noRelatedPosts]: "暂无相关文章",
+	[Key.noRelatedPosts]: "暂无关联篇章。",
 	[Key.noRandomPosts]: "暂无随机文章",
 
 	// 加密
@@ -241,10 +241,10 @@ export const zh_CN: Translation = {
 	[Key.sponsor]: "赞助",
 	[Key.sponsorTitle]: "赞助支持",
 	[Key.sponsorDescription]:
-		"如果我的内容对你有帮助，欢迎通过以下方式赞助我，你的支持是我持续创作的动力！",
+		"蒙君垂青，若愿赐金以助，不胜感激。",
 	[Key.sponsorMethods]: "赞助方式",
 	[Key.sponsorList]: "赞助列表",
-	[Key.sponsorEmpty]: "暂无赞助记录",
+	[Key.sponsorEmpty]: "尚未有缘。",
 	[Key.sponsorAmount]: "金额",
 	[Key.sponsorDate]: "日期",
 	[Key.sponsorMessage]: "留言",
@@ -253,10 +253,10 @@ export const zh_CN: Translation = {
 	[Key.sponsorGoTo]: "前往赞助",
 	[Key.sponsorButton]: "支持与分享",
 	[Key.sponsorButtonText]:
-		"如果这篇文章对你有帮助，欢迎分享给更多人或赞助支持！",
+		"此文若有裨益，盼君分享，亦感赞助之恩。",
 
 	[Key.shareOnSocial]: "文章分享",
-	[Key.shareOnSocialDescription]: "如果这篇文章对你有帮助，欢迎分享给更多人！",
+	[Key.shareOnSocialDescription]: "若有所得，不妨分享于友人。",
 
 	// 站点统计
 	[Key.siteStats]: "站点统计",
@@ -308,7 +308,7 @@ export const zh_CN: Translation = {
 
 	// 相册页面
 	[Key.gallery]: "相册",
-	[Key.galleryDescription]: "记录生活中的美好瞬间",
+	[Key.galleryDescription]: "浮光掠影，皆为踪迹。",
 	[Key.galleryPhotos]: "张照片",
 	[Key.galleryAlbums]: "本相册",
 	[Key.galleryNoAlbums]: "暂无相册",
@@ -317,7 +317,7 @@ export const zh_CN: Translation = {
 
 	// 密码保护
 	[Key.passwordProtected]: "密码保护",
-	[Key.passwordProtectedDesc]: "此内容已被密码保护，请输入密码查看。",
+	[Key.passwordProtectedDesc]: "此文加密，请输入密码以览。",
 	[Key.passwordHint]: "提示",
 	[Key.passwordPlaceholder]: "请输入密码",
 	[Key.passwordSubmit]: "解锁",

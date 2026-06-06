@@ -1,6 +1,6 @@
 ---
 title: "友情链接"
-description: "与优秀的朋友们一起成长"
+description: "与同道者偕行。"
 ---
 
 {/* MDX 文件可以根据自己的喜好完全重写，默认提供的布局仅作为参考模板，也可以使用常规的markdown语法。 */}
@@ -18,10 +18,10 @@ export const site = {
 {/* ========= 注意事项 ========== */}
 
 export const notes = [
-  { title: "互换原则", content: "请先将本站添加到您的友链页面，确认后会添加您的友链" },
-  { title: "链接维护", content: "友链网站长期无法访问或内容违规，将会被移除" },
-  { title: "内容要求", content: "内容积极向上，不含有任何含色情/反动/暴力等违法违规内容" },
-  { title: "站点要求", content: "支持 HTTPS，以原创内容为主，能够正常访问且有持续更新" },
+  { title: "互换原则", content: "请先添加本站至您的友链页，确认后即会回添。" },
+  { title: "链接维护", content: "若长期无法访问或内容失当，将移出友链。" },
+  { title: "内容要求", content: "内容须正向，不得含有色情、暴力等违法违规内容。" },
+  { title: "站点要求", content: "须支持 HTTPS，以原创为主，能正常访问且有持续更新。" },
 ];
 
 {/* ============================= */}
@@ -94,7 +94,7 @@ export const notes = [
             </div>
             <div class="pb-4">
               <p class="font-semibold text-sm mb-1">添加本站友链</p>
-              <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">请先在您的网站友链页面添加本站信息，可直接复制左侧各字段</p>
+              <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">请先在您的网站添加本站信息，可直接复制左侧各字段。</p>
             </div>
           </div>
 
@@ -106,7 +106,7 @@ export const notes = [
             </div>
             <div class="pb-4">
               <p class="font-semibold text-sm mb-1">评论区留言/发送申请邮件至：<code class="px-1.5 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[0.7rem]">{site.email}</code></p>
-              <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">申请模板，把内容复制修改后到评论区或邮件中发送</p>
+              <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">申请模板，复制修改后发送至评论区或邮件。</p>
               <div class="relative rounded-lg bg-black/5 dark:bg-white/5 p-4 pr-10 text-[0.7rem] leading-relaxed overflow-x-auto whitespace-pre">
                 <button onclick="navigator.clipboard.writeText('站点名称：您的站点名称\n站点描述：您的站点描述\n站点链接：您的站点链接\n头像链接：您的站点头像');this.querySelectorAll('svg')[0].classList.add('hidden');this.querySelectorAll('svg')[1].classList.remove('hidden');setTimeout(()=>{this.querySelectorAll('svg')[0].classList.remove('hidden');this.querySelectorAll('svg')[1].classList.add('hidden')},1500)" class="absolute top-2 right-2 w-7 h-7 flex items-center justify-center rounded-md bg-black/10 dark:bg-white/10 text-(--btn-content) hover:opacity-80 transition-opacity cursor-pointer">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
@@ -124,7 +124,7 @@ export const notes = [
             </div>
             <div>
               <p class="font-semibold text-sm mb-1">等待审核</p>
-              <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">确认信息无误后会尽快添加您的友链</p>
+              <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">信息无误后，即添友链。</p>
             </div>
           </div>
         </div>
