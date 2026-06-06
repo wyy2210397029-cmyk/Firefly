@@ -5,11 +5,10 @@ export const sponsorConfig: SponsorConfig = {
 	title: "",
 
 	// 页面描述文本，如果留空则使用 i18n 中的翻译
-	description: "",
+	description: "蒙诸君不弃，若愿惠施薄礼，赐金为助，实乃文旌之胜。",
 
 	// 赞助用途说明
-	usage:
-		"蒙诸君不弃，若愿惠施薄礼，赐金为助，实乃文旌之胜。",
+	usage: 
 
 	// 是否显示赞助者列表
 	showSponsorsList: true,
@@ -45,7 +44,7 @@ export const sponsorConfig: SponsorConfig = {
 			qrCode: "",
 			link: "https://ko-fi.com/cuteleaf",
 			description: "Buy a Coffee for Firefly",
-			enabled: true,
+			enabled: false,
 		},
 		{
 			name: "爱发电",
@@ -53,7 +52,7 @@ export const sponsorConfig: SponsorConfig = {
 			qrCode: "",
 			link: "https://ifdian.net/a/cuteleaf",
 			description: "通过 爱发电 进行赞助",
-			enabled: true,
+			enabled: false,
 		},
 	],
 
