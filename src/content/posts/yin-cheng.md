@@ -1,7 +1,7 @@
 ---
 title: 音程 Intervals
 date: 2026-06-06
-description: 学习
+description: 半音为尺量天地，十二重门各立名。柔处含悲刚处亮，八度归来是本声。
 cover:
 tags:
   - 音乐
