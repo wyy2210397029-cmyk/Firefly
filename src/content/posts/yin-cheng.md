@@ -1,6 +1,6 @@
 ---
 title: 音程 Intervals
-date: 2026-06-06
+published: 2026-06-06
 description: 半音为尺量天地，十二重门各立名。柔处含悲刚处亮，八度归来是本声。
 cover:
 tags:
@@ -10,7 +10,6 @@ tags:
 categories: 学习
 draft: false
 author: fishtalk
-pubDate: 2026-06-06
 ---
 *前排声明：本人并非专业音乐学生，只是学习经验与笔记，仅供参考。*
 
